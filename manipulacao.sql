@@ -37,8 +37,11 @@ WHERE carga_horaria < 40;
 
 -- Constraints
 ALTER TABLE matriculas
+DROP CONSTRAINT IF EXISTS chk_status;
+
+ALTER TABLE matriculas
 ADD CONSTRAINT chk_status
-CHECK (status IN('Ativo', 'Trancado', 'Concluído'));
+CHECK (status IN ('Ativo', 'Trancado', 'Concluído'));
 
 -- Triggers
 CREATE OR REPLACE FUNCTION impedir_matricula_duplicada()
@@ -57,6 +60,8 @@ BEGIN
 
 END;
 $$ LANGUAGE plpgsql;
+
+DROP TRIGGER IF EXISTS trg_matricula_duplicada ON matriculas;
 
 CREATE TRIGGER trg_matricula_duplicada
 BEFORE INSERT ON matriculas
