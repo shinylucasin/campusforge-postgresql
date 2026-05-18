@@ -1,6 +1,6 @@
 CREATE DATABASE estacio;
 
-CREATE SCHEMA gestao_academia;
+CREATE SCHEMA gestao_academica;
 
 CREATE TABLE cursos (
     id_curso SERIAL PRIMARY KEY,
