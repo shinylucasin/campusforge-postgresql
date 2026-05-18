@@ -1,7 +1,5 @@
 CREATE DATABASE estacio;
 
-CREATE SCHEMA gestao_academica;
-
 CREATE TABLE cursos (
     id_curso SERIAL PRIMARY KEY,
     nome_curso VARCHAR(100) NOT NULL,
