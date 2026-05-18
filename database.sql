@@ -1,4 +1,7 @@
--- Criando tabelas
+CREATE DATABASE estacio;
+
+CREATE SCHEMA gestao_academia;
+
 CREATE TABLE cursos (
     id_curso SERIAL PRIMARY KEY,
     nome_curso VARCHAR(100) NOT NULL,
