@@ -1,3 +1,4 @@
+--Primeiro execute o comando de criação do banco isolado, depois execute os comandos de criação das tabelas!
 CREATE DATABASE estacio;
 
 CREATE TABLE cursos (
