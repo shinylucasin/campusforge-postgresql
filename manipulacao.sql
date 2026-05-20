@@ -5,7 +5,7 @@ WHERE id_aluno = 3;
 
 UPDATE matriculas
 SET status = 'Trancado'
-WHERE id_matricula IN ( 7, 10, 16, 23 )
+WHERE id_matricula IN ( 7, 10, 16, 23 );
 
 UPDATE professores
 SET especialidade = 'Python, Django e APIs REST'
