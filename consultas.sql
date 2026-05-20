@@ -35,7 +35,7 @@ JOIN disciplinas d
 ON t.id_disciplina = d.id_disciplina
 
 JOIN professores p
-ON t.id_disciplina = p.id_professor;
+ON t.id_professor = p.id_professor;
 
 -- quantidade de alunos por turma
 SELECT
