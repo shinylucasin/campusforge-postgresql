@@ -29,6 +29,10 @@ WHERE id_turma = 8;
 DELETE FROM turmas
 WHERE id_turma = 8;
 
+-- ✅ Apaga primeiro as matrículas das turmas com id_disciplina = 7
+DELETE FROM matriculas
+WHERE id_turma IN (SELECT id_turma FROM turmas WHERE id_disciplina = 7);
+
 DELETE FROM turmas
 WHERE id_disciplina = 7;
 
