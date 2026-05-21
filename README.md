@@ -18,7 +18,7 @@ O sistema tem como objetivo gerenciar informações acadêmicas de:
 * PostgreSQL
 * SQL
 * pgAdmin
-* Draw.io
+* BrModelo
 * GitHub
 
 ---
