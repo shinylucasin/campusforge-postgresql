@@ -55,7 +55,7 @@ GROUP BY
     t.id_turma,
     d.nome_disciplina
 
-ORDER BY quantidade_alunos DESC;
+ORDER BY quantidade_alunos ASC;
 
 -- cursos e suas disciplinas
 SELECT
