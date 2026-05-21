@@ -93,3 +93,4 @@ BEGIN
     VALUES (p_id_aluno, p_id_turma, CURRENT_DATE, 'Ativo');
 END;
 $$;
+
